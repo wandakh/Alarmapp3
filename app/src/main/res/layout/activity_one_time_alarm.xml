@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:text="@string/txt_one_time_alarm"
             android:fontFamily="@font/rubik_medium"
-            android:textColor="@color/white"
+            android:textColor="@color/coklattua"
             android:textSize="26sp"
             app:layout_constraintTop_toBottomOf="@id/tv_set3"
             app:layout_constraintStart_toStartOf="parent"/>
@@ -60,13 +60,13 @@
         android:layout_height="380dp"
         android:layout_margin="25dp"
         android:padding="20dp"
-        android:background="@drawable/bg_rounded_white">
+        android:background="@color/kayakputih">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_date_one_time"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            app:cardBackgroundColor="@color/lightBlue"
+            app:cardBackgroundColor="@color/coklattua"
             app:cardCornerRadius="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +75,9 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/view_set_date_one_time"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/coklatmuda">
+
 
                 <TextView
                     android:id="@+id/tv_once_date"
@@ -100,6 +102,8 @@
                     android:fontFamily="@font/rubik_regular"
                     android:textAllCaps="false"
                     app:layout_constraintTop_toTopOf="parent"
+                    android:gravity="center"
+                    android:background="@color/coklattua"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
 
@@ -114,7 +118,7 @@
             android:id="@+id/card_time_one_time"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            app:cardBackgroundColor="@color/lightBlue"
+            app:cardBackgroundColor="@color/black"
             app:cardCornerRadius="10dp"
             android:layout_marginTop="20dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -124,7 +128,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/view_set_time"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/coklatbiasa">
 
                 <TextView
                     android:id="@+id/tv_once_time"
@@ -148,6 +153,8 @@
                     android:text="@string/txt_set_time"
                     android:fontFamily="@font/rubik_regular"
                     android:textAllCaps="false"
+                    android:gravity="center"
+                    android:background="@color/coklattua"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"/>
@@ -168,8 +175,11 @@
             android:fontFamily="@font/rubik_medium"
             android:text="@string/txt_note"
             android:textColor="@color/black"
+            android:background="@color/coklattua"
             android:textSize="14sp"
             android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="10dp"
+            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/card_time_one_time" />
@@ -178,12 +188,13 @@
             android:id="@+id/et_note_one_time"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#647AFF"
             android:fontFamily="@font/rubik_regular"
-            android:textColor="@color/blueText"
+            android:textColor="@color/black"
             android:textSize="14sp"
             android:hint="@string/txt_input_note"
             android:layout_marginTop="10dp"
+            android:background="@color/coklattua"
+            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_note_one_time" />
@@ -193,17 +204,18 @@
             android:id="@+id/btn_add_set_one_time_alarm"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/bg_rounded_blue"
-            android:text="@string/txt_add_set_alarm"
-            android:textColor="@color/white"
-            android:textAllCaps="false"
+            android:layout_marginTop="16dp"
+            android:background="@color/coklatbiasa"
             android:fontFamily="@font/rubik_medium"
+            android:text="@string/txt_add_set_alarm"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
             android:textSize="18sp"
+            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="5dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_note_one_time" />
-
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_cancel_set_one_time_alarm"
@@ -213,9 +225,10 @@
             android:text="@string/txt_cancel_set_alarm"
             android:textAllCaps="false"
             android:textSize="18sp"
-            android:textColor="@color/blueText"
+            android:textColor="@color/white"
             android:fontFamily="@font/rubik_medium"
-            android:background="@drawable/bg_rounded_white_stroke"
+            android:background="@color/coklatmuda"
+            android:gravity="center"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_add_set_one_time_alarm" />

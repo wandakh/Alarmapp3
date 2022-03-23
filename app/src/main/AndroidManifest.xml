@@ -11,17 +11,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AlarmApp">
+        android:theme="@style/Theme.AlarmApp3">
         <receiver
             android:name=".AlarmReceiver"
             android:enabled="true"
             android:exported="true"></receiver>
 
         <activity
-            android:name=".repeating_alarm_Activity"
+            android:name=".RepeatingAlarmActivity"
             android:exported="false" />
         <activity
-            android:name=".one_time_alarm_Activity"
+            android:name=".OneTimeAlarmActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

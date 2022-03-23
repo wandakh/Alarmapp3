@@ -3,7 +3,6 @@ package com.example.alarmapp3
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.example.alarmapp3.databinding.ActivityMainBinding
 import com.example.alarmapp3.fragment.DatePickerFragment
 import com.example.alarmapp3.fragment.TimePickerFragment
 import com.example.alarmapp3.room.Alarm
@@ -14,11 +13,12 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.text.SimpleDateFormat
 import java.util.*
+import com.example.alarmapp3.databinding.ActivityMainBinding as ActivityMainBinding1
 
 class OneTimeAlarmActivity : AppCompatActivity(), View.OnClickListener,
     DatePickerFragment.DialogDateListener, TimePickerFragment.DialogTimeListener {
 
-    private var binding: ActivityMainBinding? = null
+    private var binding: ActivityMainBinding1? = null
     private lateinit var alarmReceiver: AlarmReceiver
     val db by lazy { AlarmDB(this) }
 
@@ -29,7 +29,7 @@ class OneTimeAlarmActivity : AppCompatActivity(), View.OnClickListener,
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding1.inflate(layoutInflater)
         setContentView(R.layout.activity_one_time_alarm)
 
         btn_set_date_one_time.setOnClickListener(this)
